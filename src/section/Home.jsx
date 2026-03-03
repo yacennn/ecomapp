@@ -1,0 +1,48 @@
+import style from "./Home.module.css";
+
+import { brands } from "../data/brands";
+import { families } from "../data/families";
+
+export default function Home() {
+  return (
+    <section id="home" className={style.home}>
+      <div className={style.slogan}>
+        <h1>Bienvenue dans note univers ecomApp</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+          adipisci facere dolorem nam in quasi neque quibusdam at accusantium
+          excepturi, fuga harum ducimus quod error dicta odio! Architecto et
+          reiciendis officia enim animi fuga quibusdam, quasi dolorum corrupti,
+          aperiam cupiditate, ab neque velit voluptas odit molestiae. Culpa nemo
+          optio suscipit.
+        </p>
+      </div>
+
+      <div className={style.news}>
+        <div>
+          <h1>Nos meilleurs marques</h1>
+          <div className={style.grid}>
+            {brands.slice(0, 3).map((brand) => (
+              <div key={brand.id} className={style.card}>
+                <img src={brand.image} alt={brand.name} />
+                <h3> {brand.name} </h3>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div>
+          <h1>Nos families</h1>
+          <div className={style.grid}>
+            {families.slice(0, 3).map((famil) => (
+              <div key={famil.id} className={style.card}>
+                <img src={famil.image} alt={famil.name} />
+                <h3> {famil.name} </h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      
+    </section>
+  );
+}

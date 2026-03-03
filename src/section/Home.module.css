@@ -1,0 +1,64 @@
+.home {
+  padding: 4rem 2rem;
+  background-color: #e3f2fd;
+  text-align: center;
+}
+
+
+
+.slogan h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2707c3;
+}
+
+.slogan p {
+  font-size: 1.2rem;
+  margin: 2rem auto;
+  margin-bottom: 1rem;
+  color: #333;
+  max-width: 800px;
+}
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.grid {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+}
+
+.card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  flex: 1 1 120px;
+  max-width: 180px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 10rem;
+  width: 13rem;
+  justify-content: center;
+}
+
+.card img {
+  max-width: 100px;
+}
+.card h3 {
+  font-size: 1rem;
+  margin: 0;
+  color: #2707c3;
+}
+
+.news h1{
+    color: #2707c3;
+    text-decoration: underline;
+    font-size: 1.6rem;
+}
